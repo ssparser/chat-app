@@ -4,6 +4,7 @@ const path = require('path');
 const cors = require('cors');
 const http = require("http")
 const sequelize = require('./util/database');
+const User = require('./model/userModel'); 
 
 const authRoutes = require('./routes/authRoutes');
 

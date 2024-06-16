@@ -1,3 +1,7 @@
-exports.register = (req, res, next) => {
-    res.staus(200);
+const postLogin = require('./postLoginController');
+const postRegister = require('./postRegisterController');
+
+exports.controller = {
+    postLogin, postRegister
 }
+
