@@ -21,7 +21,7 @@ app.use('/auth', authRoutes);
 
 const server = http.createServer(app);
 
-sequelize.sync()
+sequelize.sync({force  : true})
 .then(result => {
     console.log(result);
 }).catch(err => {
